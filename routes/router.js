@@ -11,21 +11,21 @@ router.get('/', function(req, res) {
 });
 
 router.post('/', function(req, res) {
-  res.status(200).json( controller.new(req, res) );
+  return controller.new(req, res);
 });
 
 router.put('/', function(req, res) {
-  res.status(200).json( controller.put(req, res) );
+  return controller.put(req, res);
 });
 
 
 router.patch('/', function(req, res) {
-  res.status(200).json( controller.patch(req, res) );
+  return controller.patch(req, res);
 });
 
 
 router.delete('/', function(req, res) {
-  res.status(200).json( controller.delete(req, res) );
+  return controller.delete(req, res);
 });
 
 
